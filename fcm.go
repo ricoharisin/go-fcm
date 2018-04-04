@@ -205,6 +205,7 @@ func (this *FcmClient) Send() (*FcmResponseStatus, error) {
 
 // toJsonByte converts FcmMsg to a json byte
 func (this *FcmMsg) toJsonByte() ([]byte, error) {
+	fmt.Println(this)
 
 	return json.Marshal(this)
 
